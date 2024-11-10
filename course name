@@ -1,3 +1,6 @@
 Mobile Automation with Appium 2.0 and WebdriverIO - 2024
 
 
+npx wdio
+npx wdio config/wdio.ios.conf.js
+npx wdio config/wdio.android.conf.js
