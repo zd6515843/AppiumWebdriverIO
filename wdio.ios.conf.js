@@ -1,6 +1,9 @@
 const path = require('path');
 const { config } = require('./wdio.shared.conf');
 
+// Runner Configuration
+config.port = 4723;
+
 // Specs
 config.specs = [
   '.test/specs/ios/ios-todo-item-screen*.js'
