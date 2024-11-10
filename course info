@@ -59,5 +59,9 @@ config/wdio.shared.conf.js
 
 Run your test case
 npx allure generate allure-results
-npx allure open -h localhost -p 8081(Mac)
 npx allure open 
+
+npx allure open -h localhost -p 8081(Mac)
+I found that the default host and port opened by Allure were not allowed from my Mac machine. 
+So I set it up with localhost and port 8081, then it successfully launched the browser and showed the report.
+
