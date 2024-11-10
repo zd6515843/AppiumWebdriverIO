@@ -1,9 +1,0 @@
-Mobile Automation with Appium 2.0 and WebdriverIO - 2024
-https://www.udemy.com/course/appium-webdriverio-mobile-automation/?kw=Mobile+Automation+with+Appium+2.0+and+WebdriverIO&src=sac
-
-
-
-npx wdio
-npx wdio config/wdio.ios.conf.js
-npx wdio config/wdio.android.conf.js
-npx wdio config/wdio.ios.conf.js --spec test/specs/ios/ios-todo-item.spec.js
