@@ -13,7 +13,7 @@ config.capabilities = [
     "appium:platformVersion": '17.5',
     "appium:deviceName": 'iPhone 15',
     "appium:automationName": 'XCUITest',
-    "appium:app": 'path.join(process.cwd(), "app/ios/MVCTodo.app")',    
+    "appium:app": path.join(process.cwd(), "app/ios/MVCTodo.app")  
   }
 ]
 
