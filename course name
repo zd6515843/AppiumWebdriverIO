@@ -6,3 +6,4 @@ https://www.udemy.com/course/appium-webdriverio-mobile-automation/?kw=Mobile+Aut
 npx wdio
 npx wdio config/wdio.ios.conf.js
 npx wdio config/wdio.android.conf.js
+npx wdio config/wdio.ios.conf.js --spec test/specs/ios/ios-todo-item.spec.js
