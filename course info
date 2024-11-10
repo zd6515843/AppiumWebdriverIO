@@ -39,3 +39,25 @@ Setup ANDROID_HOME:
     echo $ANDROID_HOME
     adb devices - should return list of devices attached
     Note: the same changes can be added to .zshrc or .bashprofile file as well
+
+
+* Allure Report Setup : https://webdriver.io/docs/allure-reporter
+
+npm install @wdio/allure-reporter --save-dev
+npm i allure-commandline —save-dev
+
+config/wdio.shared.conf.js
+    reporters: [
+        'spec',
+        ['allure', {
+            outputDir: 'allure-results',
+            disableWebdriverStepsReporting: false,
+            disableWebdriverScreenshotsReporting: false
+        }]
+    ],
+
+
+Run your test case
+npx allure generate allure-results
+npx allure open -h localhost -p 8081(Mac)
+npx allure open 
