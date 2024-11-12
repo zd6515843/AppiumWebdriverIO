@@ -22,6 +22,12 @@ https://www.npmjs.com/package/appium
 npm install -g appium
 appium -v
 
+(If you receive a permission error like this below after trying to install Appium  -
+Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/appium'
+
+Then, you can run this command to provide permissions to the directory -
+sudo npm install -g appium --unsafe-perm=true --allow-root)
+
 7. Appium doctor
 npm install -g appium-doctor
 appium-doctor --version
