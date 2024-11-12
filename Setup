@@ -1,0 +1,29 @@
+Mac
+1. Node above V20
+
+2. JDK install and config JAVA_HOME
+$ vim .bash_profile
+export JAVA_HOME=$(/usr/libexec/java_home)
+Save and exit from Vim editor, then run the source command on .bash_profile
+$ source .bash_profile
+$ echo $JAVA_HOME
+
+3. Install android studio
+4. Config ANDROID_HOME
+export ANDROID_HOME="/Users/xxxx/Library/Android/sdk"
+export ANDROID_SWT="/Users/xxxx/Library/Android/sdk/tools/lib/x86_64"
+
+5. Appium inspector
+https://github.com/appium/appium-inspector/releases
+Appium-Inspector-xxxx.x.x-mac-arm64.dmg
+
+6. Appium install
+https://www.npmjs.com/package/appium
+npm install -g appium
+appium -v
+
+7. Appium doctor
+npm install -g appium-doctor
+appium-doctor --version
+appium-doctor --android
+appium-doctor --ios
