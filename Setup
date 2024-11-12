@@ -40,5 +40,5 @@ appium driver install uiautomator2
 Now to verify if it has been installed, you can run the - appium driver list command
 
 9. Webdriver IO setup
-Go to a folder
+Go to a folder and below cmd, if see node version issue then work with: nvm use v20.17.0
 npm init wdio
