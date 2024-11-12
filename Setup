@@ -33,3 +33,8 @@ npm install -g appium-doctor
 appium-doctor --version
 appium-doctor --android
 appium-doctor --ios
+
+8. appium driver install 
+appium driver install xcuitest
+appium driver install uiautomator2
+Now to verify if it has been installed, you can run the - appium driver list command
