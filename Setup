@@ -38,3 +38,7 @@ appium-doctor --ios
 appium driver install xcuitest
 appium driver install uiautomator2
 Now to verify if it has been installed, you can run the - appium driver list command
+
+9. Webdriver IO setup
+Go to a folder
+npm init wdio
