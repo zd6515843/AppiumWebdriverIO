@@ -61,4 +61,5 @@ exports.config = {
     }],
 
 
-
+https://webdriver.io/docs/allure-reporter#jenkins
+https://allurereport.org/docs/integrations-jenkins/
