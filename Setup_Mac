@@ -1,4 +1,6 @@
 Mac
+
+
 1. Nodejs above V20: v20.17.0
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 :q then hit enter
