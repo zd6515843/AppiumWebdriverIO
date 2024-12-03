@@ -10,11 +10,24 @@ node -v
 https://adoptium.net/download/
 https://mkyong.com/java/how-to-set-java_home-environment-variable-on-mac-os-x/
 
-$ vim .bash_profile
+run this cmd to see where is java location: /usr/libexec/java_home
+/Library/Java/JavaVirtualMachines/jdk-19.jdk/Contents/Home
+
+vim ~/.zshenv
+i
+export JAVA_HOME=$(/usr/libexec/java_home)
+ESC
+:wq!
+enter
+
+source ~/.zshenv
+echo $JAVA_HOME
+
+($ vim .bash_profile
 export JAVA_HOME=$(/usr/libexec/java_home)
 Save and exit from Vim editor, then run the source command on .bash_profile
 $ source .bash_profile
-$ echo $JAVA_HOME
+$ echo $JAVA_HOME)
 
 3. Install android studio
 4. Config ANDROID_HOME
