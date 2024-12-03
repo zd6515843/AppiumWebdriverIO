@@ -98,3 +98,14 @@ exports.config = {
         'appium:app': path.join(process.cwd(), "app/ColorNote+Notepad.apk"),
         "appium:autoGrantPermissions": true
     }],
+
+
+11. Xcode install - install from App Store
+
+12. Xcode Command line tools
+    xcode-select --install
+
+13. Carthage: Dependency manager for macOS & iOS
+    brew install carthage
+
+14. appium-doctor --ios
