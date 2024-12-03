@@ -1,0 +1,69 @@
+Mac
+1. Nodejs above V20: v20.17.0
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+:q then hit enter
+
+nvm install node
+node -v
+
+2. JDK install and config JAVA_HOME
+https://adoptium.net/download/
+https://mkyong.com/java/how-to-set-java_home-environment-variable-on-mac-os-x/
+
+$ vim .bash_profile
+export JAVA_HOME=$(/usr/libexec/java_home)
+Save and exit from Vim editor, then run the source command on .bash_profile
+$ source .bash_profile
+$ echo $JAVA_HOME
+
+3. Install android studio
+4. Config ANDROID_HOME
+export ANDROID_HOME="/Users/xxxx/Library/Android/sdk"
+export ANDROID_SWT="/Users/xxxx/Library/Android/sdk/tools/lib/x86_64"
+
+5. Appium inspector
+https://github.com/appium/appium-inspector/releases
+Appium-Inspector-xxxx.x.x-mac-arm64.dmg
+
+6. Appium install
+https://www.npmjs.com/package/appium
+npm install -g appium
+appium -v
+
+(If you receive a permission error like this below after trying to install Appium  -
+Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/appium'
+
+Then, you can run this command to provide permissions to the directory -
+sudo npm install -g appium --unsafe-perm=true --allow-root)
+
+7. Appium doctor
+npm install -g appium-doctor
+appium-doctor --version
+appium-doctor --android
+appium-doctor --ios
+
+8. appium driver install 
+appium driver install xcuitest
+appium driver install uiautomator2
+Now to verify if it has been installed, you can run the - appium driver list command
+
+9. Webdriver IO setup
+Go to a folder and below cmd, if see node version issue then work with: nvm use v20.17.0
+npm init wdio
+
+9. remove this line from package.json file if exist.
+  "type": "module",
+
+10. Update file wdio.conf.js
+
+const path = require('path');
+exports.config = {
+
+    capabilities: [{
+        "appium:platformName": 'Android',
+        "appium:platformVersion": '13.0',
+        "appium:deviceName": 'Pixel 6',
+        "appium:automationName": 'UiAutomator2',
+        'appium:app': path.join(process.cwd(), "app/ColorNote+Notepad.apk"),
+        "appium:autoGrantPermissions": true
+    }],
